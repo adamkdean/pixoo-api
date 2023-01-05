@@ -1,8 +1,12 @@
 {
   "name": "pixoo-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pixoo API that doesn't suck",
   "author": "Adam K Dean <adamkdean@googlemail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamkdean/pixoo-api"
+  },
   "license": "GPL-3.0",
   "main": "src/api.js",
   "type": "module",
