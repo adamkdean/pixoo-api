@@ -10,8 +10,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 async function main() {
   const api = new PixooAPI('192.168.1.117')
   await api.initialize()
-  console.log('initialized')
-  await sleep(1000)
+  console.log('Initialized Pixoo API')
 
   // Get all settings
   // const data = await api.getAllSettings()
@@ -30,29 +29,40 @@ async function main() {
   // }
 
   // Move pixel randomly
-  let x = 32
-  let y = 32
-  while (true) {
-    const direction = Math.floor(Math.random() * 4)
-    switch (direction) {
-      case 0:
-        x++
-        break
-      case 1:
-        x--
-        break
-      case 2:
-        y++
-        break
-      case 3:
-        y--
-        break
-    }
+  // let x = 32
+  // let y = 32
+  // while (true) {
+  //   const direction = Math.floor(Math.random() * 4)
+  //   switch (direction) {
+  //     case 0:
+  //       x++
+  //       break
+  //     case 1:
+  //       x--
+  //       break
+  //     case 2:
+  //       y++
+  //       break
+  //     case 3:
+  //       y--
+  //       break
+  //   }
 
-    api.fill(Color.Black)
-    api.drawPixel(x, y, Color.White)
+  //   api.fill(Color.Black)
+  //   api.drawPixel(x, y, Color.White)
+  //   // api.drawText(`Pushes: ${api.pushCount + 1}`, [0, 0], Color.White)
+  //   await api.push()
+  //   console.log(api.pushCount, 'pushed', api.pushAvgElapsed.toFixed(2), 'ms (avg)')
+  // }
+
+  let count = 0
+  while (true) {
+    const text = `(${count++})`
+    console.log(`Writing text "${text}"`)
+    api.clear()
+    api.drawText(text, [10, 10], Color.White)
     await api.push()
-    console.log(api.pushCount, 'pushed', api.pushAvgElapsed.toFixed(2), 'ms (avg)')
+    await sleep(1000)
   }
 }
 
