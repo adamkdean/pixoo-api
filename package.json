@@ -1,0 +1,16 @@
+{
+  "name": "pixoo-api",
+  "version": "0.0.1",
+  "description": "Pixoo API that doesn't suck",
+  "author": "Adam K Dean <adamkdean@googlemail.com>",
+  "license": "GPL-3.0",
+  "main": "src/api.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js",
+    "test:dev": "nodemon test.js"
+  },
+  "dependencies": {
+    "superagent": "^8.0.6"
+  }
+}
