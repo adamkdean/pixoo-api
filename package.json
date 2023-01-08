@@ -15,6 +15,7 @@
     "test:dev": "nodemon test.js"
   },
   "dependencies": {
+    "sharp": "^0.31.3",
     "superagent": "^8.0.6"
   }
 }
