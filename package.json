@@ -1,12 +1,23 @@
 {
   "name": "pixoo-api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Pixoo API that doesn't suck",
   "author": "Adam K Dean <adamkdean@googlemail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/adamkdean/pixoo-api"
   },
+  "keywords": [
+    "divoom",
+    "pixoo",
+    "api",
+    "image",
+    "pixel",
+    "pixel art",
+    "drawing",
+    "graphics",
+    "rendering"
+  ],
   "license": "GPL-3.0",
   "main": "src/api.js",
   "type": "module",
