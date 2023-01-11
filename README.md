@@ -39,11 +39,11 @@ The PixooAPI class has several methods that you can use to manipulate the canvas
 - `clear()`: fill the canvas with black pixels.
 - `fill(color)`: fill the canvas with the given color.
 - `drawPixel(x, y, color)`: draw a pixel at the given coordinates with the given color.
-- `drawChar(char, position, color)`: draw a character at the given position with the given color.
-- `drawText(text, position, color)`: draw a text on the canvas at the given coordinates with the given color.
-- `drawTextCenter(text, y, color)`: draw a text centered on the canvas on the given horizontal line (y) with the given color.
-- `drawTextLeft(text, y, color, padding)`: draw a text on the left side of the canvas on the given horizontal line (y) with the given color and padding.
-- `drawTextRight(text, y, color, padding)`: draw a text on the right side of the canvas on the given horizontal line (y) with the given color and padding.
+- `drawChar(char, position, color, font?)`: draw a character at the given position with the given color.
+- `drawText(text, position, color, font?)`: draw a text on the canvas at the given coordinates with the given color.
+- `drawTextCenter(text, y, color, font?)`: draw a text centered on the canvas on the given horizontal line (y) with the given color.
+- `drawTextLeft(text, y, color, padding, font?)`: draw a text on the left side of the canvas on the given horizontal line (y) with the given color and padding.
+- `drawTextRight(text, y, color, padding, font?)`: draw a text on the right side of the canvas on the given horizontal line (y) with the given color and padding.
 - `drawRect(start, end, color, fill = false)`: draw a rectangle on the canvas between the given coordinates with the given color. If `fill` is true, the rectangle will be filled with the given color.
 - `drawLine(start, end, color)`: draw a line on the canvas between the given coordinates with the given color.
 - `drawImage(path, pos, size)`: draw an image on the canvas at the given position with the given size.
